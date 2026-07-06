@@ -18,7 +18,7 @@ col4.metric("Energy-Valence link", "0.69", "strong correlation")
 st.divider()
 
 # Load data
-merged = pd.read_csv(r"C:\Users\Jiyoon\billboard-project\data\processed\merged.csv")
+merged = pd.read_csv("data/processed/merged.csv")
 decade_avg = merged.groupby('decade')[
     ['tempo','energy','valence','danceability','acousticness','speechiness']
 ].mean().round(3)
